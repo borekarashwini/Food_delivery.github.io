@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happily Fresh |Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+  <!-- <header>
+    <nav>
+      <div class="topnav">
+        <div class="">
+        <img src="./pictures/logo.png" alt="logo-icon" />
+      </div>
+          <a class="active" href="index.html">Home</a>
+          <a href="./menu.html">Food</a>
+          <a href="groceries.html">Groceries</a>
+          <a href="#medicines">Medicines</a>
+          <a href="#contactus">Contact Us</a>
+          <a href="#aboutus">About Us</a>
+        </div>
+    </nav>
+  </header> -->
+  
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="pictures/logo1 (2).png" style="width: auto;height: auto;">
+      <a class="navbar-brand" href="#">Happily Fresh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="groceries.html">Groceries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="medicines.html">Medicines</a>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"type="submit">Login</button>
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate"  method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="pictures/avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label style="color: white;">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container">
+              <button type="button" onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger my-2 my-sm-0">Cancel</button>
+              <span class="psw" style="color: white;">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+      </div> 
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid p-0">
+    <div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active boat">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Food Cravings?</h2>
+                  <p class="animated fadeInRight">We deliver the yummiest and healthiest food following all security parameters at your doorsteps.</p>
+                  <a class="animated fadeInUp btn delicious-btn" href="menu.html">Order Food</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item sea">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Stuck At Home?</h2>
+                  <p class="animated fadeInRight">Understanding your daily neccessities we also deliver essential Groceries at your door.</p>
+                  <a class="animated fadeInUp btn delicious-btn" href="groceries.html">Order Groceries</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item river">
+          <div class="container h-100 d-md-block">
+            <div class="row align-items-center h-100">
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="caption animated fadeIn">
+                  <h2 class="animated fadeInLeft">Infected with Covid?</h2>
+                  <p class="animated fadeInRight">We understand being a patient you need rest. Hence we take responsibility of delivering your medicines following all safety parameters </p>
+                  <a class="animated fadeInUp btn delicious-btn" href="#">Order Groceries</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      <section class="services-container">
+        <h1 class="h-secondary center">
+          Our Services
+        </h1>
+        <div id="services">
+          <div class="box">
+            <h2 class="h-secondary center">Food Deivery</h2>
+            <img src="pictures/healthyfood.png" />
+            <p class="center">
+              Food that is delivered at the right time.
+The trendy food delivery partner.
+
+Good food is what we deliver.
+
+Your hunger companion.
+
+When you crave for midnight delicacy, just dial our number.</p>
+          </div>
+        <div class="box">
+            <h2 class="h-secondary center">Groceries</h2>
+            <img src="pictures/grocdelivery.jpg"  />
+            <p class="center">
+              Fresh grocery is what we deliver.
+
+Your kitchen companion.
+
+When you have grocery emergencies, just dial our number.
+
+Speedy and faster deliveries just with us.
+
+Our promise; on time delivery.
+            </p>
+          </div>
+          <div class="box">
+            <h2 class="h-secondary center">Medicines</h2>
+            <img src="pictures/meddelivery.jpg"  />
+            <p class="center">
+              Bringing the medicine at your door.
+Making sure you feel as good as you look.
+The best way to get your prescription.
+Our expertise at your disposal.
+We are here to help with your care.
+
+            </p>
+          </div>
+        </div>
+      </section> 
+      <div class="center">
+        <h2>Safety Assurance</h2>
+        <img src="pictures/Frame 3.png" / style="width: 100%;">
+      </div>
+        
+      <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="container">
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="company-name">
+                  All Rights Reserved. &copy; 2021
+                  <a href="#">Happily Fresh</a> Design By :
+                  <a href="#">Ashwini and Rashmi</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+     
+    </body>
+  </html>
+  
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+ 
+</body>
+</html>
+
